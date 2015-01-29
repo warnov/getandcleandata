@@ -107,3 +107,22 @@ fBodyBodyGyroMag-mean()
 fBodyBodyGyroMag-std()
 fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()
+
+DATA TRANSFORMATIONS
+Files UCI HAR Dataset/test/subject_test.txt, UCI HAR Dataset/test/y_test.txt and UCI HAR Dataset/test/X_test.txt where bound by columns in order to get all the info relative to TESTS: This is: UserID, Activity and measurements. 
+
+This dataset contained the full set of measurements; but as only those measuring mean and standard deviation were required, a procedure to select just these columns out from the dataset were made.
+
+After these, appropriate column names were given to the resulting dataset. These column names were extracted from "UCI HAR Dataset/features.txt" file.
+
+The same procedure of merging files was made in order to extract the training data from the files: UCI HAR Dataset/train/subject_train.txt, UCI HAR Dataset/train/y_train.txt and UCI HAR Dataset/train/X_train.txt.
+After having the dataset with all the columns, the same columns selection was executedalready having the column names from the previous operation.
+
+After this, both: tests and training datasets were merged by rows.
+
+With all the measurements ready, an aggregation by user and activity was made, using the mean as aggregating function for the rest od the variables in order to have an independent tidy data set with the average of each variable for each activity and each subject.
+
+With this being done, another selection of columns was made in order to eliminate redundant info. And a relabeling of columns to have proper names was practiced.
+
+To finish the processing of the data, the ids from activities were replaced by their descriptive names extracted from "UCI HAR Dataset/activity_labels.txt", in order to produce a more readable final dataset.
+
