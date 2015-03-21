@@ -1,4 +1,4 @@
-#This function makes all the process to unify and get tidy data
+#This function makes all the process to unify and get tidy data.
 tidyIOT <- function(){
   #Let's read all the subject test columns both for test and then training:
   
