@@ -4,7 +4,7 @@
 ## CODEBOOK ##
 
 ### VARIABLES DESCRIPTION ###
-After running the run_analysis.R script with the instructions found in README.md, you can get a tidy dataset with the following variables:
+After running the [`run_analysis.R`](/run_analysis.R "R Script") script with the instructions found in README.md, you can get a tidy dataset with the following variables:
 
 ####UserId
 	User Identificator
