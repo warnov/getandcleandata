@@ -122,7 +122,7 @@ Files
     UCI HAR Dataset/test/y_test.txt
     UCI HAR Dataset/test/X_test.txt
 
-where bound by columns in order to get all the info relative to **tests**.
+were bound by columns in order to get all the info relative to **tests**.
 
 This is: *UserID*, *Activity* and *measurements*. 
 
